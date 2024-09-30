@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <h1 class="text-center mb-1">Scan image</h1>
+        <hr>
+        <div class="row d-flex align-items-center">
+            <form action="" method="post" enctype="multipart/form-data" class="col-md-4 p-4 shadow "
+                style="height: fit-content;">
+                <div class="mb-3">
+                    <label for="file" class="form-label">Select image</label>
+                    <input type="file" class="form-control" name="imagefile" id="file">
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+            <div class="col-md-1"></div>
+            <div class="col-md-7 shadow">
+                <h2 class="text-center">Actual Image for detection</h2>
+                <hr>
+                {% if image %}
+                <div class="d-flex justify-content-center">
+                    <img src="{{ image }}" alt="" class="img-fluid" style="max-height: 350px;">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-light p-4 shadow" style="background-color: rgba(25, 207, 28, 0.776);">
+        <h2 class="text-center  fw-bold">Prediction</h2>
+        <hr>
+        {% if result %}
+        <h3><b>Result - </b> Image is a <strong>{{result}}</strong></h3>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>

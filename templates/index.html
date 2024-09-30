@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corn leaf desease detector</title>
+</head>
+
+<body>
+    {% include 'navbar.html '%}
+
+    <div class="d-flex justify-content-center mt-5">
+        <img src="../static/images/bg/bg.jpg" alt="" class="img-fluid">
+    </div>
+
+    <div class="container p-3 mt-5 bg-success-subtle">
+        <h3 class="fw-semibold">Protect Your Corn, Detect Disease.</h3>
+        <hr>
+        <p class="fs-5">
+            Corn leaf detector is a cutting-edge tool designed to revolutionize corn crop management.
+            Leveraging advanced machine learning algorithms, our app accurately identifies various corn leaf diseases,
+            providing farmers with timely insights to protect their yields. By simply uploading an image of a corn leaf,
+            our app delivers immediate and reliable diagnoses, empowering farmers to make informed decisions about
+            disease prevention and treatment.
+        </p>
+    </div>
+
+    <div class=" container p-3 shadow mt-5">
+        <h3 class="fw-semibold">Key Features</h3>
+        <hr>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5 bg-success-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>Accurate Classification:</b>
+                    Utilizes state-of-the-art machine learning models for precise identification of common corn leaf
+                    diseases. High detection accuracy to ensure reliable and timely diagnoses.
+                </p>
+            </div>
+            <div class="col-md-5 bg-success-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>User-Friendly Interface:</b>
+                    Intuitive and easy-to-navigate design for users of all levels of technical expertise.
+                    Simple upload process for corn leaf images. Instantaneous results displayed in a clear and
+                    understandable format.
+                </p>
+            </div>
+            <div class="col-md-5 bg-success-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>Disease Information and Recommendations:</b>
+                    Provides detailed descriptions of each detected disease,
+                    including symptoms, causes, and prevention strategies.
+                </p>
+            </div>
+            <div class="col-md-5 bg-success-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>Data Privacy and Security:</b>
+                    Ensures the confidentiality and security of user data.
+                    Adheres to strict privacy regulations to protect farmer information.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 p-4 shadow" style="width: 50%; min-width: 360px;">
+        <h3 class="fw-semibold text-center">How It Works </h3>
+        <hr>
+        <div class="bg-success-subtle">
+            <div class="d-flex justify-content-center align-items-center gap-5 p-3">
+                <p class="fs-5">Upload a corn leaf image</p>
+                <img src="../static/images/bg/uploadingIcon.png" alt="" height="50" width="50">
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-5 p-3">
+                <p class="fs-5">Get a results in Seconds</p>
+                <img src="../static/images/bg/loading.png" alt="" height="50" width="50">
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-5 p-3">
+                <p class="fs-5">Try it now</p>
+                <a href="/login" class="btn btn-success">Get Started</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

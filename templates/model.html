@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep learning models</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container p-4 mt-5">
+        <div class="container bg-success-subtle p-3 mt-4 rounded">
+            <h1 class="text-center"> Model: EfficientNet</h1>
+            <hr>
+            <p class="fs-5">
+                The MBConv layer is a fundamental building block of the EfficientNet architecture. It is inspired by the
+                inverted residual blocks from MobileNetV2 but with some modifications. The MBConv layer starts with a
+                depth-wise convolution, followed by a point-wise convolution (1x1 convolution) that expands the number
+                of channels, and finally, another 1x1 convolution that reduces the channels back to the original number.
+                This bottleneck design allows the model to learn efficiently while maintaining a high degree of
+                representational power. In addition to MBConv layers, EfficientNet incorporates the SE block, which
+                helps the model learn to focus on essential features and suppress less relevant ones. The SE block uses
+                global average pooling to reduce the spatial dimensions of the feature map to a single channel, followed
+                by two fully connected layers. These layers allow the model to learn channel-wise feature dependencies
+                and create attention weights that are multiplied with the original feature map, emphasizing important
+                information.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

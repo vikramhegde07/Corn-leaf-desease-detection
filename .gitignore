@@ -1,0 +1,16 @@
+# Python files (if you're using a virtual environment)
+env/
+*.pyc
+__pycache__/
+static/Model EfficientNet.keras
+
+# Environment variables
+.env
+.flaskenv
+
+# Caches
+__pycache__/
+.pytest_cache/
+
+# Temporary files
+*.swp

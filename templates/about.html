@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div class="container shadow bg-body mt-3 p-4">
+        <h1 class="text-center">About Us</h1>
+        <hr>
+
+        <div class="row bg-success-subtle p-3">
+            <h1>Our Mission</h1>
+            <hr>
+            <p class="fs-5">
+                Corn leaf desease detector is committed to empowering farmers with the tools they need to safeguard
+                their corn crops. Our mission is to leverage technology to revolutionize corn disease management by
+                providing accurate, accessible, and timely disease detection. By empowering farmers with data-driven
+                insights, we aim to contribute to sustainable agriculture and ensure food security for generations to
+                come.
+            </p>
+        </div>
+
+        <div class="row bg-success-subtle mt-4 p-3">
+            <h1>Our Team</h1>
+            <hr>
+            <p class="fs-5">
+                Our team is comprised of dedicated professionals with a passion for leveraging artificial
+                intelligence to improve healthcare outcomes. Together, we bring a diverse range of expertise in
+                imaging, deep learning, and computer science to the development of our system.
+            </p>
+            <ul>
+                <li>Dr.Example</li>
+                <p class="text-body-secondary">Profession details</p>
+                <li>Developer</li>
+                <p class="text-body-secondary">Profession details</p>
+            </ul>
+        </div>
+
+        <div class="row bg-success-subtle mt-3 p-3">
+            <h1>Our Technology</h1>
+            <hr>
+            <p class="fs-5">
+                Our app harnesses the power of advanced machine learning algorithms to accurately identify corn leaf
+                diseases.By analyzing the visual characteristics of uploaded images, our models can detect subtle
+                patterns and anomalies that are indicative of various diseases. These algorithms are trained on a vast
+                dataset of corn leaf images, ensuring high accuracy and reliability in disease diagnosis.
+            </p>
+            <a href="/model" class="btn fs-5 text-decoration-underline" style="width: fit-content;">
+                For more information on our deep learning technology
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

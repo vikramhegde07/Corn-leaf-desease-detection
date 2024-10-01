@@ -2,7 +2,9 @@
 env/
 *.pyc
 __pycache__/
-static/Model EfficientNet.keras
+static/Models/Model EfficientNet.keras
+static/Models/CNN Model.keras
+static/Models/Model VGG19.keras
 
 # Environment variables
 .env

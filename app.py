@@ -140,7 +140,7 @@ def output():
     image_path = ''
     if request.method=='POST':
         image_file = request.files["imagefile"]
-        model_selection = request.form.get('model')
+        model_selection = int(request.form.get('model'))
         
         #saving image in local storage for rendering preview
         image_file.save(f'static/images/test/{image_file.filename}')

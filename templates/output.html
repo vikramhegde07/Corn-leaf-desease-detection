@@ -17,6 +17,14 @@
             <form action="" method="post" enctype="multipart/form-data" class="col-md-4 p-4 shadow "
                 style="height: fit-content;">
                 <div class="mb-3">
+                    <label for="model" class="form-label">Select Model for Detection</label>
+                    <select name="model" id="model" class="form-select">
+                        <option selected value="1">EfficientNet</option>
+                        <option value="2">CNN</option>
+                        <option value="3">VGG19</option>
+                    </select>
+                </div>
+                <div class="mb-3">
                     <label for="file" class="form-label">Select image</label>
                     <input type="file" class="form-control" name="imagefile" id="file">
                 </div>

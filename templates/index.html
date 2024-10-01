@@ -76,7 +76,11 @@
             </div>
             <div class="d-flex justify-content-center align-items-center gap-5 p-3">
                 <p class="fs-5">Try it now</p>
+                {% if session.get('logged') %}
+                <a href="/output" class="btn btn-success">Get Started</a>
+                {% else %}
                 <a href="/login" class="btn btn-success">Get Started</a>
+                {% endif %}
             </div>
         </div>
     </div>

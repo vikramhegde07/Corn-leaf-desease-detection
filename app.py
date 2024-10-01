@@ -140,13 +140,14 @@ def output():
     image_path = ''
     if request.method=='POST':
         image_file = request.files["imagefile"]
+        model_selection = request.form.get('model')
         
         #saving image in local storage for rendering preview
         image_file.save(f'static/images/test/{image_file.filename}')
         image_path = "static/images/test/" + image_file.filename
         result =''
         image = Image.open(image_file)
-        prediction = classify.predict(image)
+        prediction = classify.predict(image,model_selection)
         result = " {} with a {:.2f}% Confidence.".format(class_names[np.argmax(prediction)], 100 * np.max(prediction))
         userId = session['userId']
         new_history = History(userId=userId,result=result,image=image_path)

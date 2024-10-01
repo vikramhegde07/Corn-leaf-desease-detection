@@ -1,7 +1,7 @@
-The model file is large so it is uploaded to the gdrive - https://drive.google.com/file/d/14K9Gbd9TIL7gjqMGYF77Mz1odhC45J8q/view?usp=drive_link
- 
- 
- # Information
+The model file is large so it is uploaded to the gdrive
+Model  files will be made public shortly
+
+# Information
 
 # Default Login Credentials
 username - 'admin'
